@@ -130,7 +130,7 @@ This project demonstrates the integration of a headless CMS with a responsive Re
 
 ## 📁 Project Structure
 
-```
+´´´
 ProjectNews/
 ├── src/
 │   ├── api/              # CMS API integration
@@ -147,6 +147,7 @@ ProjectNews/
 ├── vite.config.ts       # Vite configuration
 ├── tsconfig.json        # TypeScript configuration
 └── package.json         # Dependencies
+
 ```
 
 ---
@@ -238,31 +239,3 @@ A: Always use environment variables (`.env.local`). Never commit credentials to 
 This project is created for a School Project.
 
 ---
-
-## 👨‍💻 Author
-
-Created as a course assignment for CMS systems integration.
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
