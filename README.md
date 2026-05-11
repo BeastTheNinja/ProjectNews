@@ -93,44 +93,44 @@ This project demonstrates the integration of a headless CMS with a responsive Re
 
 1. **Clone the repository**
 
-   ```bash
-   git clone <repository-url>
-   cd ProjectNews
-   ```
+```bash
+git clone <repository-url>
+cd ProjectNews
+```
 
-2. **Install dependencies**
+1. **Install dependencies**
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. **Configure your CMS**
-   - Create a `.env.local` file in the project root
-   - Add your CMS API credentials:
+1. **Configure your CMS**
 
-     ```env
-     VITE_CMS_API_URL=your_cms_api_url
-     VITE_CMS_API_KEY=your_api_key
-     VITE_CMS_SPACE_ID=your_space_id (if using Contentful)
-     ```
+Create a `.env.local` file in the project root and add your CMS credentials:
 
-4. **Start the development server**
+```env
+VITE_CMS_API_URL=your_cms_api_url
+VITE_CMS_API_KEY=your_api_key
+VITE_CMS_SPACE_ID=your_space_id
+```
 
-   ```bash
-   npm run dev
-   ```
+1. **Start the development server**
 
-5. **Build for production**
+```bash
+npm run dev
+```
 
-   ```bash
-   npm run build
-   ```
+1. **Build for production**
+
+```bash
+npm run build
+```
 
 ---
 
 ## 📁 Project Structure
 
-´´´
+```text
 ProjectNews/
 ├── src/
 │   ├── api/              # CMS API integration
@@ -147,7 +147,6 @@ ProjectNews/
 ├── vite.config.ts       # Vite configuration
 ├── tsconfig.json        # TypeScript configuration
 └── package.json         # Dependencies
-
 ```
 
 ---
@@ -236,6 +235,6 @@ A: Always use environment variables (`.env.local`). Never commit credentials to 
 
 ## 📄 License
 
-This project is created for a School Project.
+This project is created for a School.
 
 ---
